@@ -1,22 +1,23 @@
 ---
 const { title = "Jeff Wieland" } = Astro.props;
+import "../styles/global.css";
 ---
 
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
-    <link rel="stylesheet" href="/styles/global.css" />
   </head>
   <body>
     <header>
       <nav>
         <a href="/">Home</a>
         <a href="/resume">Resume</a>
-        <a href="/case-studies/unite">Case Studies</a>
-        <a href="/#contact">Contact</a>
+        <a href="/casestudies">Case Studies</a>
+        <a href="/contact">Contact</a>
+        <a href="/industryleadership">Speaking & Industry Leadership</a>
       </nav>
     </header>
 
