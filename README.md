@@ -41,3 +41,11 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+## Deploy to prod
+```
+cd jeff-wieland-site
+git status         # see what changed
+git add .          # stage all changes
+git commit -m "add a comment here"
+git push origin main
