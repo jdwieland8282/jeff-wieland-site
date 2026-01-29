@@ -3,14 +3,101 @@ import Layout from "../layouts/BaseLayout.astro";
 ---
 <Layout title="Jeff Wieland">
   <article>
-    <section>
-      <h1>
+  <h1>
         Senior Director of Product Management<br />
         <span style="color: var(--muted)">
           Platform & Ecosystem
         </span>
       </h1>
+  <section id="stats" style="background-color: #1a1a1a; color: white; padding: 4rem 0; text-align: center;">
+      <div style="display: flex; justify-content: space-around; flex-wrap: wrap; max-width: 1000px; margin: 0 auto; gap: 2rem;">
+        
+        <div class="stat-box">
+          <h2 class="stat" data-target="17">0</h2>
+          <p>Years in AdTech</p>
+        </div>
+        
+        <div class="stat-box">
+          <h2 class="stat" data-target="8">0</h2>
+          <p>Years in Product Management</p>
+        </div>
+        
+        <div class="stat-box">
+          <h2 class="stat" data-target="300000">0</h2>
+          <p>Systems Throughput (QPS)</p>
+        </div>
+        
+        <div class="stat-box">
+          <h2 class="stat" data-target="25">0</h2>
+          <p>Commits on Prebid.org</p>
+        </div>
 
+      </div>
+    </section>
+
+    <style>
+      .stat-box {
+        flex: 1 1 200px;
+        background: #2c2c2c;
+        border-radius: 12px;
+        padding: 2rem 1rem;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .stat-box:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+      }
+
+      .stat {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+        color: #4fd1c5; /* accent color */
+        font-weight: bold;
+      }
+
+      .stat-box p {
+        margin: 0;
+        color: #ccc;
+        font-size: 1rem;
+      }
+    </style>
+
+    <script>
+      // Animate numbers when section comes into view
+      const stats = document.querySelectorAll('.stat');
+      const options = { threshold: 0.5 };
+      
+      const animateStat = (stat) => {
+        const target = +stat.getAttribute('data-target');
+        let count = 0;
+        const increment = target / 100; // adjust speed
+
+        const update = () => {
+          count += increment;
+          if(count < target){
+            stat.textContent = Math.floor(count).toLocaleString();
+            requestAnimationFrame(update);
+          } else {
+            stat.textContent = target.toLocaleString();
+          }
+        }
+        update();
+      }
+
+      const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+          if(entry.isIntersecting){
+            animateStat(entry.target);
+            obs.unobserve(entry.target);
+          }
+        });
+      }, options);
+
+      stats.forEach(stat => observer.observe(stat));
+    </script>
+    <section>
+      <h2>Profile</h2>      
       <p>
         Veteran AdTech product leader with nearly two decades of experience
         building large-scale advertising platforms spanning identity, privacy,
@@ -18,7 +105,7 @@ import Layout from "../layouts/BaseLayout.astro";
       </p>
 
       <p>
-        Senior Director–caliber Product Leader with 15+ years building ad servers, SSPs, identity, privacy, and curation platforms at massive scale.
+        Senior Director–caliber Product Leader with 18 years building ad servers, SSPs, identity, privacy, and curation platforms at massive scale.
       </p>
       <p>
         I am a senior technical product leader with 18 years in AdTech, beginning in 2008 on Microsoft’s Atlas ad server and progressing to Director‑level scope at Magnite. I lead platforms that process over <strong>1 trillion ad requests per day</strong>, including mission‑critical systems operating at <strong>300,000+ QPS</strong>.
