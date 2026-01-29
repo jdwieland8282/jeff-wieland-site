@@ -3,55 +3,41 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout title="UniTE — Unified Targeting Engine">
-  <article>
-    <h1>UniTE — Unified Targeting Engine</h1>
+  <section id="unite-case-study" class="case-study">
+  <h2>UniTE – Unified Targeting Expressions</h2>
 
-    <p><strong>Role:</strong> Principal Technical Product Manager (Platform & Ecosystem)</p>
+  <h3>Strategic Challenge</h3>
+    <p>
+      Our ad exchange evaluated targeting expressions <strong>sequentially</strong>, with each new expression extending vertically. 
+      Many expressions were later discarded due to <strong>user-level targeting evaluation</strong>, creating inefficiencies and limiting scale. 
+      The problem was to <strong>scale targeting expression evaluation</strong> while also performing an <strong>overlap analysis</strong> between:
+    </p>
+    <ul>
+      <li>The PMPs the exchange predicted a user would qualify for</li>
+      <li>The audience memberships the user actually belonged to</li>
+    </ul>
+    <p>
+      The challenge required designing a solution that <strong>improved throughput, optimized targeting decisions, and provided actionable insights for product and business teams</strong>.
+    </p>
 
-    <section>
-      <h2>Problem</h2>
-      <p>
-        A large, global supply-side advertising platform faced a recurring, multi-year scalability
-        issue with domain and audience targeting. Existing solutions did not scale, increased
-        auction latency, capped buyer spend, and directly impacted win rates.
-      </p>
-    </section>
 
-    <section>
-      <h2>Approach</h2>
-      <p>
-        Led a cross-functional tiger team, translating business constraints into platform-level
-        technical requirements, defining success metrics, and driving alignment across senior
-        engineering leadership.
-      </p>
-       <ul>
-        <li>Acted as voice of the customer while translating business constraints into technical requirements</li>
-        <li>Defined success metrics and latency thresholds</li>
-        <li>Managed delivery across 4 engineering leads and 12 ICs</li>
-      </ul>
-      <h2>Execution</h2>
-        <ul>
-          <li>Partnered with engineering to design a horizontally scalable targeting service using radix trees</li>
-          <li>Established a measurement framework showing ad engines degraded beyond ~500 segments</li>
-          <li>Drove enablement, testing, rollout, and adoption across the exchange</li>
-        </ul>
-        <h2>Impact</h2>
-          <ul>
-            <li>Launched after ~6 months of development</li>
-            <li>Resolved a multi-year structural issue</li>
-            <li>Enabled scalable domain and bundle targeting for curators</li>
-            <li>Unlocked XX ARR and expanded use cases to audiences, segments, zip codes, and households</li>
-            <li>Now powers targeting across multiple real-time transaction systems at massive scale</li>
-          </ul>  
-    </section>
+  <h3>My Role & Leadership</h3>
+  <p>
+    I led the initiative to <strong>define the product vision and roadmap</strong>, aligning engineering, data science, and business teams across multiple organizations. 
+    I established success metrics, prioritized capabilities, and ensured alignment with <strong>industry standards for privacy and consent</strong>.
+  </p>
 
-    <section>
-      <h2>Impact</h2>
-      <ul>
-        <li>Resolved a multi-year structural issue</li>
-        <li>Unlocked XX ARR</li>
-        <li>Enabled scalable targeting across real-time transaction systems</li>
-      </ul>
-    </section>
-  </article>
+  <h3>Impact & Outcomes</h3>
+  <ul>
+    <li>Delivered a <strong>scalable framework for cross-publisher data collaboration</strong>, enabling partners to make data-driven decisions while remaining fully GDPR-compliant.</li>
+    <li>Influenced adoption across multiple partner organizations, establishing <strong>best practices for data privacy and measurement in programmatic advertising</strong>.</li>
+    <li>Presented the solution publicly, sharing insights with both <strong>technical and executive audiences</strong>, helping shape industry thinking.</li>
+  </ul>
+
+  <h3>Takeaway</h3>
+  <p>
+    Unite demonstrates how <strong>strategic product leadership and cross-functional collaboration</strong> can unlock value in complex ecosystems while maintaining compliance and trust.
+  </p>
+</section>
+
 </BaseLayout>

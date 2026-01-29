@@ -3,52 +3,46 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout title="Realtime Data — Third-Party Exchange Access">
-  <article>
-    <h1>Realtime Data — Third-Party Exchange Access</h1>
-
-    <p><strong>Role:</strong>Principal Technical Product Manager (Platform & Ecosystem)</p>
-
-    <section>
-      <h2>Problem</h2>
+  <h3>Strategic Challenge</h3>
+    <h3>Realtime data Pre-Auction Bidstream Access for Curators</h3>
       <p>
-        A leading programmatic advertising exchange identified a major gap in its curation business: third-party curators lacked pre-auction bidstream access, preventing them from scaling spend across the exchange. This limitation contributed to the loss of $2–3M in MRR from a strategic customer and blocked broader GTM expansion.
+        Curators needed access to the exchange’s bid stream <strong>before the auction executed</strong>.
+        Their goal was to inspect the OpenRTB (ORTB) bidstream, evaluate auction-level signals, and
+        <strong>conditionally activate a deal based on those values</strong>, then bid on that deal through their DSP.
       </p>
-    </section>
-    <section>
-      <h2>Context & Constraints</h2>
-      <ul>
-        <li>High-stakes executive visibility</li>
-        <li>GTM alignment across sales, partnerships, and engineering</li>
-        <li>Competitive pressure from incumbent buy- and sell-side curation tools</li>
-      </ul>  
-    </section>  
 
-    <section>
-      <h2>Approach</h2>
-      <ul>
-        <li>Owned the problem end-to-end from executive escalation to delivery</li>
-        <li>Partnered with platform and targeting teams to define a scalable access model</li>
-        <li>Balanced customer-specific needs with long-term platform strategy</li>
-      </ul>  
-    </section>
+      <p>
+        The existing auction flow did not support <strong>pre-auction visibility or conditional deal activation</strong>,
+        creating friction for curators and limiting participation in high-value inventory.
+        The challenge was to enable <strong>controlled, real-time access to bidstream data</strong> without
+        compromising auction performance, data integrity, or ecosystem trust.
+      </p>
 
-    <section>
-      <h2>Execution</h2>
-        <ul>
-        <li>Led cross-org delivery of third-party exchange access capabilities</li>
-        <li>Enabled pre-auction bidstream access for curator decisioning</li>
-        <li>Delivered GTM-ready capabilities for deal activation and scale</li>
-        </ul>
-    </section>
+      <p>
+        Solving this required rethinking <strong>auction sequencing, data exposure, and latency constraints</strong>,
+        while preserving fairness and scalability across the exchange.
+      </p>
+<h3>Impact & Outcomes</h3>
 
-    <section>
-      <h2>Impact</h2>
-      <ul>
-        <li>Launched with a strategic customer as alpha</li>
-        <li>Positioned the company to recover lost MRR and target $XX MRR in the following year/li>
-        <li>Established a competitive alternative to existing curation platforms</li>
-        <li>Created a durable foundation for behavioral and contextual curation strategy</li>
-      </ul>
-    </section>
-  </article>
+<ul>
+  <li>
+    Enabled <strong>curated buyers to participate earlier in the auction lifecycle</strong>,
+    increasing flexibility in how deals were activated and executed.
+  </li>
+  <li>
+    Improved <strong>marketplace liquidity</strong> by allowing curators to selectively engage
+    with inventory based on real-time auction signals.
+  </li>
+  <li>
+    Preserved <strong>auction performance and fairness</strong> by introducing controlled,
+    policy-aligned access to bidstream data.
+  </li>
+  <li>
+    Created a <strong>scalable foundation for future real-time data products</strong>,
+    supporting additional third-party integrations and advanced buying strategies.
+  </li>
+</ul>
+
+    
+
 </BaseLayout>

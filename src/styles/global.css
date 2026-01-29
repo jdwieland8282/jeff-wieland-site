@@ -62,7 +62,7 @@ p {
 }
 
 strong {
-  color: var(--text);
+  color: var(--muted);
 }
 
 /* ---------------- Layout ---------------- */

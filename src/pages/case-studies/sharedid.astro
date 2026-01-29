@@ -3,55 +3,58 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout title="SharedID — First-Party Identity & Privacy Platform (Prebid)">
-  <article>
-    <h1>SharedID — Identity & Privacy (Prebid)</h1>
+  <section id="sharedid-case-study" class="case-study">
+  <h2>SharedID – Publisher-Controlled Identity at Scale</h2>
+  <p class="case-study-summary">
+    SharedID enabled a <strong>publisher-controlled, privacy-aware identity framework</strong> that reduced fragmentation
+    across the programmatic ecosystem and prepared publishers for a cookieless future.
+    The initiative combined <strong>platform strategy, ecosystem collaboration, and standards leadership</strong>
+    to deliver a scalable identity solution adopted across the open web.
+  </p>
 
-    <p><strong>Role:</strong> Principal Technical Product Manager (Platform & Ecosystem)</p>
-    <p><strong>Public Ecosystem:</strong> Prebid.org (Open Source)</p>
 
-    <section>
-      <h2>Problem</h2>
-      <p>
-        Industry-wide changes—including browser privacy controls and third-party cookie deprecation—required a new approach to identity that preserved addressability while respecting privacy regulations. Publishers needed a scalable, compliant solution to act as first-party addressers.
-      </p>
-    </section>
+  <h3>Strategic Challenge</h3>
+  <p>
+    Publishers faced fragmented and inconsistent identity signals across the header bidding ecosystem as browsers restricted third-party cookies.
+    This made it harder for buyers to match users and for publishers to maximize yield across partners.
+  </p>
+  <p>
+    The opportunity was to develop a <strong>consistent, publisher-controlled user identity</strong> that could be stored in
+    <strong>first-party context</strong>, reduce reliance on third-party cookie syncing, and provide a common namespace across ecosystem participants.
+    Successfully addressing this required balancing <strong>privacy, interoperability, and publisher control</strong>.
+  </p>
 
-    <section>
-      <h2>Context & Constraints</h2>
-      <ul>
-        <li>GDPR and global privacy compliance</li>
-        <li>Industry adoption required trust, neutrality, and transparency</li>
-        <li>Technical limitations of third-party cookies</li>  
-      </ul>
-    </section>
+  <h3>My Role & Leadership</h3>
+  <p>
+    I led the product strategy for integrating SharedID into our platform, aligning internal teams and external partners on a
+    vision of <strong>publisher-first identity at scale</strong>. I defined the product roadmap, prioritized capabilities that balanced
+    performance and privacy, and coordinated cross-functional collaboration with ecosystem stakeholders.
+  </p>
 
-    <section>
-      <h2>Approach</h2>
-      <ul>
-        <li>Designed a first-party identity solution intended for industry-wide adoption</li>
-        <li>Proactively identified and mitigated regulatory, technical, and adoption risks</li>
-        <li>Leveraged Prebid and IAB Tech Lab participation to drive ecosystem consensus</li>  
-      </ul>
-    </section>
+  <h3>Impact & Outcomes</h3>
+  <ul>
+    <li>
+      Enabled a <strong>publisher-controlled universal identifier</strong> that reduced reliance on fragmented third-party signals
+      and cookie syncing across header bidding partners.
+    <li>
+      Increased identity consistency for participating partners, improving <strong>user match rates and bid relevance</strong>
+      within programmatic auctions. 
+    </li>
+    <li>
+      Supported publisher readiness for a <strong>cookieless future</strong> by leveraging first-party storage mechanisms while honoring
+      consent and privacy preferences. 
+    </li>
+    <li>
+      Advanced industry adoption of an open, community-owned solution, strengthening the role of the open web vs.
+      proprietary alternatives. 
+  </ul>
 
-    <section>
-      <h2>Execution</h2>
-      <ul>
-        <li>Led delivery with a focused product and engineering team</li>
-        <li>Donated the solution to Prebid, leveraging its Global Vendor List (GVL) for GDPR compliance</li>
-        <li>Removed third-party cookie dependency, shifting to per-publisher UUIDs</li>
-        <li>Collaborated with <strong>Prebid</strong> and the <strong>IAB Tech Lab</strong> to define standardized identifier transport via the OpenRTB Extended ID framework</li>  
-      </ul>
-    </section>
+  <h3>Takeaway</h3>
+  <p>
+    SharedID showcases how strategic product leadership can unlock open, scalable identity solutions that empower publishers,
+    improve ecosystem collaboration, and prepare platforms for a privacy-centric future.
+  </p>
+</section>
 
-    <section>
-      <h2>Impact</h2>
-      <ul>
-        <li>Adopted across 50%+ of browser-based ad requests in the open web ecosystem</li>
-        <li>Demonstrated measurable CPM lift when present</li>
-        <li>Established industry-aligned, privacy-forward identity infrastructure</li>
-        <li>EBecame foundational to sell-side identity and audience strategy</li>
-      </ul>
-    </section>
-  </article>
+
 </BaseLayout>

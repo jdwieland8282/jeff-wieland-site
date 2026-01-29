@@ -2,81 +2,172 @@
 import Layout from "../layouts/BaseLayout.astro";
 ---
 <Layout title="Jeff Wieland">
-  <article>
-    <section>
-      <h1>Resume</h1>
-        <h2>Summary</h2>
-        <p>Senior Director–level Technical Product Leader with deep expertise in programmatic advertising, SSP platforms, real‑time bidding, identity, privacy, and curation. Recognized as an influential leader who owns complex, high‑impact initiatives across organizational boundaries.</p>
-        <p>Proven record of delivering platforms that unlock new revenue, resolve multi‑year structural issues, and reposition companies competitively—while operating at extreme scale and under strict latency and regulatory constraints.</p>
+  <section id="resume">
 
-        <h2>Core Skills</h2>
-        <ul>
-          <li>Product Strategy & Roadmapping</li>
-          <li>Programmatic Advertising (RTB, OpenRTB, Prebid)</li>
-          <li>SSP & Publisher Monetization</li>
-          <li>Data Platforms & APIs</li>
-          <li>Stakeholder Management</li>
-          <li>Technical Requirements & Architecture</li>
-        </ul>
+  <h2>Executive Profile</h2>
+  <p>
+    Product leader with <strong>15+ years of experience in programmatic advertising and AdTech</strong>,
+    specializing in marketplace platforms, identity, privacy, and real-time systems.
+    Proven track record of defining product strategy, aligning cross-functional teams,
+    and delivering scalable solutions that drive revenue, liquidity, and ecosystem trust.
+  </p>
+  <p>
+    Known for bridging technical depth with strategic leadership, and for representing
+    organizations externally through <strong>industry standards leadership, public speaking,
+    and open-source collaboration</strong>.
+  </p>
 
-        <h2>Professional Experience</h2>
+  <h2>Professional Experience</h2>
 
-        <div class="experience">
-          <p class="company">Magnite <span class="dates">(2017–Present)</span></p>
-          <p class="title">Principal / Senior Director of Product Management (Platform & Ecosystem)</p>
-          <ul>
-            <li>Own Director‑level product scope for exchange, targeting, identity, privacy, and curation platforms processing 1T+ daily ad requests</li>
-            <li>Regularly interact with ELT, strategic customers, and external partners to define GTM strategy and platform direction</li>
-            <li>Lead large cross‑functional initiatives spanning multiple engineering orgs, product areas, and revenue teams</li>
-          </ul>
+  <h3>Magnite</h3>
+  <p><em>Principal Technical Product Manager | 2017 – Present</em></p>
+  <ul>
+    <li>
+      Own platform-level product strategy across <strong>identity, privacy, targeting, and real-time data systems</strong>
+      supporting Magnite’s omnichannel exchanges.
+    </li>
+    <li>
+      Led initiatives spanning <strong>UserSync, Extended IDs, audience targeting, and third-party data integrations</strong>,
+      balancing performance, scalability, and regulatory compliance.
+    </li>
+    <li>
+      Served as <strong>privacy champion</strong> across multiple platforms (Rubicon, Telaria, SpotX, SpringServe),
+      driving adoption of GDPR, EU-TCF, and Global Privacy Platform (GPP) standards.
+    </li>
+    <li>
+      Defined product vision and roadmaps, authored PRDs and technical designs, and partnered closely
+      with engineering, data, legal, and business teams.
+    </li>
+    <li>
+      Delivered strategic products including:
+      <ul>
+        <li>
+          <strong>SharedID</strong> — an open-source, publisher-controlled identity framework now supporting
+          ~80% of web and mobile web ad requests.
+        </li>
+        <li>
+          <strong>Magnite Access</strong> — an omnichannel audience and identity suite responsible for
+          ~20% of gross media spend tied to audience targeting.
+        </li>
+        <li>
+          <strong>Third-Party Curator Real-Time Access (3pX)</strong> — enabling pre-auction bidstream access
+          for curated buying strategies, increasing marketplace flexibility and share of wallet.
+        </li>
+      </ul>
+    </li>
+  </ul>
 
-          <h3>Exchange Access & Curation (3PX)</h3>
-          <ul>
-            <li>Identified and owned a company‑wide gap in Magnite’s curation capabilities that limited curator scale and resulted in $2–3M MRR loss from strategic customers</li>
-            <li>Led cross‑org delivery of 3rd‑Party Exchange Access (3PX), enabling pre‑auction bidstream access for curators</li>
-            <li>Launched in Q4 2025 with Audigent as alpha; targeting $XX MRR in 2026 and direct competition with Microsoft Xandr Curate</li>
-          </ul>
+  <h3>Prebid.org</h3>
+  <p><em>Chair, Privacy & Identity Product Management Committee | 2019 – Present</em></p>
+  <ul>
+    <li>
+      Lead product direction and consensus-building for privacy and identity initiatives
+      across the open-source Prebid ecosystem.
+    </li>
+    <li>
+      Incubated the <strong>User ID and sub-adapter framework</strong>, supporting 55+ third-party identity solutions.
+    </li>
+    <li>
+      Co-developed <strong>SharedID</strong> and guided its evolution through community governance
+      and broad industry adoption.
+    </li>
+    <li>
+      Represent Prebid publicly through speaking engagements, demos, and thought leadership
+      on privacy, identity, and Privacy Sandbox initiatives.
+    </li>
+  </ul>
 
-          <h3>Unified Targeting Engine (UniTE)</h3>
-          <ul>
-            <li>Product leader on a cross‑functional tiger team solving a multi‑year scalability issue in domain and audience targeting</li>
-            <li>Partnered with senior engineering leadership to deliver a horizontally scalable targeting service using radix trees</li>
-            <li>Managed 4 engineering leads and 12 ICs, defined success metrics, and validated latency thresholds</li>
-            <li>Enabled new curator capabilities and unlocked XX ARR, with ongoing expansion across streaming and SpringServe platforms</li>
-          </ul>
+  <h3>Verizon</h3>
+  <p><em>Director, Solutions Engineering – Data Products | 2016 – 2017</em></p>
+  <ul>
+    <li>
+      Led data product enablement for Verizon demand platforms, surfacing first- and third-party data
+      that generated <strong>$30–40M in quarterly revenue</strong>.
+    </li>
+    <li>
+      Operationalized deterministic and probabilistic identity data across mobile, video,
+      and display channels, contributing <strong>$17–20M in quarterly revenue</strong>.
+    </li>
+    <li>
+      Acted as a bridge between product, engineering, and commercial teams to scale data-driven offerings.
+    </li>
+  </ul>
 
-          <h3>Identity & Privacy Leadership (SharedID)</h3>
-          <ul>
-            <li>Designed and delivered SharedID, a first‑party identity solution addressing cookie deprecation</li>
-            <li>Mitigated GDPR risk by donating SharedID to Prebid and leveraging GVL compliance</li>
-            <li>Drove architectural shift from third‑party cookie dependency to per‑publisher UUIDs</li>
-            <li>SharedID now present on 50%+ of browser ad requests across DV+ with measurable CPM lift</li>
-          </ul>
+  <h2>Earlier Career</h2>
+  <p class="career-arc">
+    These roles established my foundation in <strong>ad serving, data platforms, analytics, and enterprise systems</strong>,
+    shaping a career focused on building scalable products at the intersection of technology and business.
+  </p>
 
-          <h3>Prebid (Open Source)</h3>
-          <ul>
-            <li>Chair, Identity & Privacy Product Management Committee</li>
-            <li>Lead strategy for identity, privacy, real‑time data, and measurement across the open‑web ecosystem</li>
-            <li>Delivered Extended ID framework, seller‑defined audiences, privacy modules, and measurement tooling</li>
-            <li>Frequent speaker at Prebid Ascent and Summit events; recognized industry voice in identity and privacy</li>
-          </ul>
-        </div>
+<h3>AddThis (acquired by Oracle)</h3>
+<p><em>Senior Solutions Engineer / Sales Engineering Manager | 2011 – 2016</em></p>
+<ul>
+  <li>
+    Played a key role in evolving AddThis from a widget-based publisher tool into a
+    <strong>data-driven audience and segmentation platform</strong> operating at internet scale.
+  </li>
+  <li>
+    Led technical discovery and solution design for <strong>Data-as-a-Service and programmatic offerings</strong>,
+    enabling predictable, recurring revenue and high-margin deals.
+  </li>
+  <li>
+    Developed proof-of-concept products for <strong>audience segmentation and analytics</strong>,
+    helping publishers and brands better understand content engagement and user behavior.
+  </li>
+  <li>
+    Supported large-scale programmatic integrations that achieved
+    <strong>80–90% margins</strong> through automation and “set-it-and-forget-it” workflows.
+  </li>
+  <li>
+    Acted as a bridge between sales, engineering, and product, shaping roadmap decisions
+    based on customer demand and market opportunity.
+  </li>
+  <li>
+    Contributions supported AddThis’s growth and eventual <strong>4× revenue exit to Oracle</strong>.
+  </li>
+</ul>
 
-        <div class="experience">
-          <p class="company">Verizon Media</p>
-          <p class="title">Director, Solutions Engineering – Data Products</p>
-          <ul>
-            <li>Led productized data capabilities generating $30–40M in quarterly revenue</li>
-            <li>Operationalized deterministic and probabilistic data across mobile, video, and display</li>
-          </ul>
-        </div>
+<h3>Stanley Black & Decker</h3>
+<p><em>Senior Business Analyst | 2009 – 2011</em></p>
+<ul>
+  <li>
+    Member of the enterprise <strong>E-commerce Web Services team</strong>, supporting sales and marketing
+    platforms at global scale.
+  </li>
+  <li>
+    Owned analytics and performance measurement used to justify a
+    <strong>$1M enterprise website redesign</strong>.
+  </li>
+  <li>
+    Administered and evaluated web analytics, penetration testing, and marketing systems
+    to improve site performance, reliability, and conversion.
+  </li>
+  <li>
+    Partnered with technical and business stakeholders to translate data insights into
+    product and platform investment decisions.
+  </li>
+</ul>
 
-        <h2>Early Career</h2>
-        <ul>
-          <li>AddThis (Oracle) – Senior Solutions Engineer / Product Leadership (4× revenue exit)</li>
-          <li>Aquanative / Microsoft Atlas Ad Server (2008) – Client Services & Technical Support</li>
-          <li>Stanley Black & Decker – Senior Business Analyst, Digital Advertising</li>
-        </ul>
-    </section>
-  </article>
+<h3>Aquantive (acquired by Microsoft)</h3>
+<p><em>Support Engineer | 2007 – 2009</em></p>
+<ul>
+  <li>
+    Supported enterprise advertisers running large-scale search, display, and rich media
+    campaigns on the <strong>Atlas ad server</strong>.
+  </li>
+  <li>
+    Served as an escalation point for complex technical issues involving
+    <strong>ad serving, JavaScript, HTML, and campaign execution</strong>.
+  </li>
+  <li>
+    Worked directly with customers and internal teams to diagnose platform issues,
+    improving system reliability and advertiser trust.
+  </li>
+  <li>
+    Built early expertise in <strong>ad-serving infrastructure and marketplace dynamics</strong>,
+    forming the technical foundation for later leadership roles in programmatic platforms.
+  </li>
+</ul>
+ 
+
 </Layout>
